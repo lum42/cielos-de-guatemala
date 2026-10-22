@@ -1,7 +1,7 @@
 // Cielos de Guatemala — offline support.
 // The whole app shell is cached on install, so the site opens with no signal in the field.
 // Weather requests go straight to the network; the app keeps the last forecast on the device.
-const VERSION = "v20261022053043";
+const VERSION = "v20261022055614";
 const CACHE = "cg-" + VERSION;
 const SHELL = [
   "./", "index.html", "app.css", "app.js", "manifest.webmanifest", "photos-public.json",

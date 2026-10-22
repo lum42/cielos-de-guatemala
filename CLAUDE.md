@@ -11,13 +11,13 @@ The owner (Lumz) is learning astronomy and astrophotography from first principle
 
 ```sh
 npm install                          # esbuild 0.21.5, react 18.3.1
-pip install pillow fonttools brotli  # for tools/web_assets.py (icons, link-preview image, fonts)
+python3 -m pip install pillow fonttools brotli  # for tools/web_assets.py; on Windows `pip` can belong to another Python than `python3`
 ./build.sh [TRIGGER_ID]              # bash + python3; on Windows use Git Bash or WSL (build.sh calls `python3`)
 node test/smoke.js web               # every tab × mode × theme × language, desktop + 390px phone
 node test/flow.js                    # switches, kit choice, mentor links, offline service worker, Claude-build mock
 ```
 
-Tests need Playwright (`npm i -D playwright && npx playwright install chromium`). They fail on page errors, console errors and horizontal overflow; `--shots` saves screenshots to `test/shots/`. Run both before every push.
+Tests need Playwright (a dev dependency; once per machine: `npx playwright install chromium`). `.gitattributes` keeps LF line endings on Windows checkouts, which bash needs for `build.sh`. They fail on page errors, console errors and horizontal overflow; `--shots` saves screenshots to `test/shots/`. Run both before every push.
 
 `./build.sh` writes:
 - `dist/claude/cielos_de_guatemala.html` (everything inline) and `dist/claude/app.js`
@@ -36,7 +36,7 @@ Tests need Playwright (`npm i -D playwright && npx playwright install chromium`)
 | `src/prelude.js` | React imports, `store`, tiny global stores (`useTheme`, `useMode`), `PLATFORM` |
 | `src/data_base.js`, `src/data_extra.js` | Targets, owner's lenses, sites, loadout, workflow (personal data) |
 | `src/catalog.js` | Object coordinates, sizes, facts, how-to-find hops; `SITE_COORDS` |
-| `src/systems.js` | Canon / Nikon / Fujifilm / MFT bodies, lenses, trackers; `kitLensesFor` ranks kit lenses by FF-equivalent focal match |
+| `src/systems.js` | Canon / Nikon / Sony / Fujifilm / MFT bodies, lenses, trackers; `kitLensesFor` ranks kit lenses by FF-equivalent focal match |
 | `src/highlights.js` | 24 naked-eye / binocular highlights, meteor showers |
 | `src/lessons.js` | Mentor lessons (4 levels), Bortle table, dark-sky copy |
 | `src/public.js` | Public variants of personal content; Spanish site names (`siteName`), fact and gear-name localizers |

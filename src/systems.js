@@ -82,6 +82,34 @@ const SYSTEMS = {
       { id: "z180600", name: "Nikkor Z 180-600mm f/5.6-6.3 VR", f: [180, 600], N: [6.3], role: "deep", note: "Moon and planets.", note_es: "Luna y planetas." },
     ],
   },
+  sony: {
+    id: "sony", name: "Sony", short: "Sony", fmt: "E (FE · APS-C)",
+    bodies: [
+      body("a7iv", "Sony a7 IV", 35.9, 23.9, 7008, 4672, "33 MP full frame; a balanced all-rounder for the night sky.", "Full frame de 33 MP; equilibrada para todo el cielo nocturno."),
+      body("a7iii", "Sony a7 III", 35.6, 23.8, 6000, 4000, "24 MP full frame with large pixels; a popular value pick for astro.", "Full frame de 24 MP con píxeles grandes; opción popular y accesible para astro."),
+      body("a7siii", "Sony a7S III", 35.6, 23.8, 4240, 2832, "12 MP with very large pixels: stars trail latest, but the least detail.", "12 MP con píxeles muy grandes: los trazos aparecen más tarde, pero con menos detalle."),
+      body("a7rv", "Sony a7R V", 35.7, 23.8, 9504, 6336, "61 MP: the most detail, smallest pixels (trails show soonest).", "61 MP: el mayor detalle, píxeles más chicos (los trazos aparecen antes)."),
+      body("a7cii", "Sony a7C II", 35.9, 23.9, 7008, 4672, "33 MP full frame in a compact body for treks.", "Full frame de 33 MP en un cuerpo compacto para caminatas."),
+      body("a6700", "Sony a6700", 23.3, 15.5, 6192, 4128, "APS-C 26 MP; 1.5× crop.", "APS-C de 26 MP; recorte 1.5×."),
+    ],
+    lenses: [
+      { id: "fe14gm", name: "Sony FE 14mm f/1.8 GM", f: [14, 14], N: [1.8, 2.8], role: "wide", noFilter: true, note: "Light (460 g) with very little coma wide open; no front filter thread.", note_es: "Ligero (460 g) y con muy poca coma a plena apertura; sin rosca de filtro frontal." },
+      { id: "fe1224gm", name: "Sony FE 12-24mm f/2.8 GM", f: [12, 24], N: [2.8, 4], role: "wide", noFilter: true, note: "Widest fast zoom; bulbous front, no front filter.", note_es: "El zoom luminoso más amplio; frontal bulboso, sin filtro frontal." },
+      { id: "fe1635gm2", name: "Sony FE 16-35mm f/2.8 GM II", f: [16, 35], N: [2.8, 4], role: "wide", note: "Light, versatile f/2.8 zoom that takes 82mm filters.", note_es: "Zoom f/2.8 ligero y versátil que acepta filtros de 82mm." },
+      { id: "fe20g", name: "Sony FE 20mm f/1.8 G", f: [20, 20], N: [2, 1.8, 2.8], role: "wide", note: "Small and light (373 g); a long-time Sony astro favourite.", note_es: "Pequeño y ligero (373 g); favorito astro de Sony desde hace años." },
+      { id: "fe24gm", name: "Sony FE 24mm f/1.4 GM", f: [24, 24], N: [1.4, 2], role: "wide", note: "Very fast and light for tighter Milky Way frames; low coma.", note_es: "Muy luminoso y ligero para encuadres más cerrados de la Vía Láctea; poca coma." },
+      { id: "sigma14e", name: "Sigma 14mm f/1.4 DG DN Art", f: [14, 14], N: [1.4, 2, 2.8], role: "wide", noFilter: true, note: "Fastest 14mm, built for the night sky; heavy (1.16 kg), rear filter holder. Discontinued: used market.", note_es: "El 14mm más luminoso, pensado para el cielo nocturno; pesado (1.16 kg), portafiltro trasero. Descontinuado: mercado de usados." },
+      { id: "sigma1424e", name: "Sigma 14-24mm f/2.8 DG DN Art", f: [14, 24], N: [2.8], role: "wide", noFilter: true, note: "Sharp ultra-wide zoom; rear holder for sheet filters, no front thread.", note_es: "Zoom ultra gran angular nítido; portafiltro trasero para láminas, sin rosca frontal." },
+      { id: "sam14e", name: "Samyang 14mm f/2.8 (manual)", f: [14, 14], N: [2.8], role: "wide", noFilter: true, note: "Classic budget ultra-wide (E-mount version).", note_es: "Clásico ultra gran angular económico (versión montura E)." },
+      { id: "laowa15e", name: "Laowa 15mm f/2 Zero-D (E)", f: [15, 15], N: [2.2, 2, 2.8], role: "wide", note: "Fast and compact; stop down ⅓–1 stop if corners smear.", note_es: "Luminoso y compacto; cierra ⅓–1 paso si las esquinas se corren." },
+      { id: "vilt13e", name: "Viltrox AF 13mm f/1.4 (APS-C)", f: [13, 13], N: [1.4, 2], role: "wide", note: "Fast ultra-wide for the a6700 (≈20mm full-frame).", note_es: "Ultra gran angular luminoso para la a6700 (≈20mm FF)." },
+      { id: "fe135gm", name: "Sony FE 135mm f/1.8 GM", f: [135, 135], N: [1.8, 2.8], role: "deep", note: "Sharp to the corners wide open; a top tracked deep-sky lens.", note_es: "Nítido hasta las esquinas a plena apertura; de lo mejor para cielo profundo con montura." },
+      { id: "sam135e", name: "Samyang 135mm f/2 ED UMC (E)", f: [135, 135], N: [2.8, 2], role: "deep", note: "Manual-focus deep-sky favourite at a fair price.", note_es: "Favorito manual de cielo profundo a buen precio." },
+      { id: "fe70200gm2", name: "Sony FE 70-200mm f/2.8 GM OSS II", f: [70, 200], N: [2.8], role: "deep", note: "Flexible framing; OSS off on a tracker.", note_es: "Encuadre flexible; OSS apagado en montura." },
+      { id: "fe100400gm", name: "Sony FE 100-400mm f/4.5-5.6 GM OSS", f: [100, 400], N: [5.6], role: "deep", note: "Galaxies, clusters, the Moon; OSS off on a tracker.", note_es: "Galaxias, cúmulos, la Luna; OSS apagado en montura." },
+      { id: "fe200600g", name: "Sony FE 200-600mm f/5.6-6.3 G OSS", f: [200, 600], N: [6.3], role: "deep", note: "Moon and planets; 2.1 kg, so check the mount's payload.", note_es: "Luna y planetas; 2.1 kg, revisa la carga de la montura." },
+    ],
+  },
   fuji: {
     id: "fuji", name: "Fujifilm", short: "Fujifilm", fmt: "X (APS-C)",
     bodies: [
@@ -106,7 +134,7 @@ const SYSTEMS = {
     ],
   },
 };
-const SYSTEM_ORDER = ["mft", "canon", "nikon", "fuji"];
+const SYSTEM_ORDER = ["mft", "canon", "nikon", "sony", "fuji"];
 
 // Tracking classes. K = focal length × safe sub (mm·s) for 3.34 µm pixels;
 // scaled by pixel pitch. Second value: after a good drift test (expect some rejects).

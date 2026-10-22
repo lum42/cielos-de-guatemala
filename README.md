@@ -11,7 +11,7 @@ Una guía del cielo nocturno de Guatemala (15°N) para observar, fotografiar y c
 - **Calendario**: fases de la Luna, lluvias de meteoros con aviso de luz lunar, planetas y la temporada del centro de la Vía Láctea.
 - **Cielos oscuros**: simulador de contaminación lumínica en la escala de Bortle, por qué importa la noche oscura y qué puede hacer cualquiera.
 - **Mentor**: 17 lecciones paso a paso, de mirar el cielo a procesar fotos, y misiones del mes.
-- **Modo fotógrafo**: objetivos de temporada, encuadre real con tu cámara y lente (Canon, Nikon, Fujifilm, OM System / Olympus / Panasonic), rangos de exposición seguros en trípode o con rastreador.
+- **Modo fotógrafo**: objetivos de temporada, encuadre real con tu cámara y lente (Canon, Nikon, Sony, Fujifilm, OM System / Olympus / Panasonic), rangos de exposición seguros en trípode o con rastreador.
 - Tres temas: Noche, Rojo (para no perder la visión nocturna) y 8-bit. Español e inglés.
 - Funciona sin señal: instálala desde el navegador y abre una vez con conexión para guardar el pronóstico.
 
@@ -34,7 +34,7 @@ A night-sky guide for Guatemala (15°N): what to look at tonight, how to photogr
 - **Calendar**: Moon phases, meteor showers with a moonlight verdict, planet events and the Milky Way core season.
 - **Dark Skies**: a light-pollution simulator on the Bortle scale, why darkness matters and what anyone can do.
 - **Mentor**: 17 step-by-step lessons, from naked-eye basics to processing, plus monthly missions.
-- **Photographer mode**: seasonal targets, true framing for your camera and lens (Canon, Nikon, Fujifilm, OM System / Olympus / Panasonic) and safe exposure ranges on a tripod or a tracker.
+- **Photographer mode**: seasonal targets, true framing for your camera and lens (Canon, Nikon, Sony, Fujifilm, OM System / Olympus / Panasonic) and safe exposure ranges on a tripod or a tracker.
 - Night, Red (night-vision) and 8-bit themes. Spanish and English.
 - Works offline once installed from the browser; open it once with signal to store the forecast.
 
@@ -46,9 +46,10 @@ Requirements: Node 18+, Python 3 with Pillow, fontTools and brotli.
 
 ```sh
 npm install
-pip install pillow fonttools brotli
-./build.sh                 # → docs/ (the website) and dist/claude/ (the Claude artifact build)
-node test/smoke.js web     # every tab × mode × theme, desktop and phone (needs Playwright + Chromium)
+npx playwright install chromium               # browser for the tests
+python3 -m pip install pillow fonttools brotli
+./build.sh                 # → docs/ (the website) and dist/claude/ (the Claude artifact build); on Windows run it from Git Bash
+node test/smoke.js web     # every tab × mode × theme, desktop and phone
 node test/flow.js          # switches, kit choice, mentor links, offline service worker
 ```
 
