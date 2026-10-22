@@ -70,6 +70,6 @@ See [CREDITS.md](CREDITS.md) for data, image and font sources.
 
 ## License · Licencia
 
-The code is released under the [MIT License](LICENSE). MIT covers the code only: data, photos and fonts keep their own licenses, listed in [CREDITS.md](CREDITS.md). The HYG-derived star data in `src/skydata.js` stays CC BY-SA, the reference photos are CC BY 4.0, and the fonts are under the SIL Open Font License.
+The code is released under the [MIT License](LICENSE). MIT covers the code only: data, photos and fonts keep their own licenses, listed in [CREDITS.md](CREDITS.md) and summarised in [NOTICE](NOTICE). The HYG-derived star data in `src/skydata.js` stays CC BY-SA, the reference photos are CC BY 4.0, and the fonts are under the SIL Open Font License.
 
-El código se publica bajo la [licencia MIT](LICENSE). La MIT cubre solo el código: los datos, las fotos y las fuentes conservan sus propias licencias, detalladas en [CREDITS.md](CREDITS.md). Los datos estelares derivados de HYG en `src/skydata.js` siguen bajo CC BY-SA, las fotos de referencia son CC BY 4.0 y las fuentes usan la SIL Open Font License.
+El código se publica bajo la [licencia MIT](LICENSE). La MIT cubre solo el código: los datos, las fotos y las fuentes conservan sus propias licencias, detalladas en [CREDITS.md](CREDITS.md) y resumidas en [NOTICE](NOTICE). Los datos estelares derivados de HYG en `src/skydata.js` siguen bajo CC BY-SA, las fotos de referencia son CC BY 4.0 y las fuentes usan la SIL Open Font License.
