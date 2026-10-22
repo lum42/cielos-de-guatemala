@@ -67,7 +67,3 @@ Done from a Claude session that has the Artifact tool (the owner's "Astrophotogr
 3. Upload `dist/claude/app.js` as an asset and update `config/app.appJs` (offline copies embed it; it must match the published version).
 
 A scheduled task (`trig_01B37nEptpzVX2YNHeXUfBXK`, 12:48 and 16:48 Guatemala) refreshes `forecasts` in this artifact and in the older "Guatemala Night Sky" artifact from Clear Outside.
-
-## Open items
-
-- No license chosen for the code yet (data and fonts keep theirs, see CREDITS.md). Ask the owner before adding one.

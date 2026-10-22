@@ -60,7 +60,7 @@ One source, two builds: `src/` is concatenated and bundled with esbuild; `PLATFO
 | `src/astro.js` | Sun, Moon and planet positions, twilight, rise/set, moon phases, planet events |
 | `src/skydata.js` | Packed star catalog (≤ mag 6), Milky Way brightness map, constellation lines |
 | `src/catalog.js`, `src/highlights.js` | Photo targets and naked-eye highlights with how-to-find notes |
-| `src/systems.js` | Camera bodies, lenses and trackers for the four systems |
+| `src/systems.js` | Camera bodies, lenses and trackers for the five systems |
 | `src/exposure.js`, `src/frame.jsx` | NPF rule, tracked limits, sky-glow caps, the framing preview |
 | `src/lessons.js`, `src/mentor.jsx` | Lessons, missions, dark-sky content |
 | `web/` | Website shell: `index.html`, service worker, manifest |
@@ -68,6 +68,8 @@ One source, two builds: `src/` is concatenated and bundled with esbuild; `PLATFO
 
 See [CREDITS.md](CREDITS.md) for data, image and font sources.
 
-## License
+## License · Licencia
 
-No license has been chosen for the code yet, so it remains © its author with all rights reserved. Data, images and fonts keep their own licenses, listed in CREDITS.md.
+The code is released under the [MIT License](LICENSE). MIT covers the code only: data, photos and fonts keep their own licenses, listed in [CREDITS.md](CREDITS.md). The HYG-derived star data in `src/skydata.js` stays CC BY-SA, the reference photos are CC BY 4.0, and the fonts are under the SIL Open Font License.
+
+El código se publica bajo la [licencia MIT](LICENSE). La MIT cubre solo el código: los datos, las fotos y las fuentes conservan sus propias licencias, detalladas en [CREDITS.md](CREDITS.md). Los datos estelares derivados de HYG en `src/skydata.js` siguen bajo CC BY-SA, las fotos de referencia son CC BY 4.0 y las fuentes usan la SIL Open Font License.
