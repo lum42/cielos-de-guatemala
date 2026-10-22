@@ -1,0 +1,14 @@
+{
+  "name": "cielos-de-guatemala",
+  "private": true,
+  "description": "Night-sky guide for Guatemala (15°N): what's up tonight, cloud forecasts, astrophotography and dark-sky awareness.",
+  "scripts": {
+    "build": "./build.sh",
+    "test": "node test/smoke.js web && node test/flow.js"
+  },
+  "dependencies": {
+    "esbuild": "0.21.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

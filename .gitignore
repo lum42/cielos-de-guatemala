@@ -1,0 +1,8 @@
+node_modules
+dist/
+build/photos.json
+seed_old/
+test/shots/
+test/generated_offline.html
+*.log
+.DS_Store
