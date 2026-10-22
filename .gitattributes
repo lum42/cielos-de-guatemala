@@ -1,0 +1,6 @@
+# LF everywhere, also on Windows checkouts: build.sh breaks under bash with CRLF,
+# and the build output in docs/ should not change with the machine it was built on.
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.woff2 binary

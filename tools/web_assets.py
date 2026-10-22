@@ -29,7 +29,7 @@ for block in re.findall(r"@font-face\s*\{[^}]*\}", css):
         sys.exit(f"missing font file {src}")
     shutil.copy(src, os.path.join(out, "fonts", fname))
     rules.append(re.sub(r"src:\s*url\(data:[^)]*\)", f"src:url(fonts/{fname})", block))
-open(fonts_css_out, "w", encoding="utf-8").write("\n".join(rules) + "\n")
+open(fonts_css_out, "w", encoding="utf-8", newline="\n").write("\n".join(rules) + "\n")
 
 # ── photos: only openly licensed images go on the public site ──
 # build/photos.json is the full Stellarium pack (used by the Claude build, not committed); build/photos-public.json
